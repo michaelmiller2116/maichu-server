@@ -11,7 +11,7 @@ const charge = require("./routes/charge");
 app.use(bodyParser.json());
 app.use(cors());
 app.use(morgan('dev'));
-app.use('/', cart, ponchos, charge)//Tried adding charge here too
+app.use('/', cart, ponchos, charge)
 
 
 // catch 404 and forward to error handler
