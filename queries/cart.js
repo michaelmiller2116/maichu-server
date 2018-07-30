@@ -1,4 +1,4 @@
-const database = require("../database-connection");
+const database = require('../database-connection')
 
 module.exports = {
   list() {
@@ -16,4 +16,4 @@ module.exports = {
   delete(id) {
     return database('cart').delete().where('id', id)
   }
-};
+}

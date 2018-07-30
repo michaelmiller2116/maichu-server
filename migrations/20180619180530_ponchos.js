@@ -7,8 +7,8 @@ exports.up = function(knex, Promise) {
     poncho.text('description')
     poncho.integer('price')
   } )
-};
+}
 
 exports.down = function(knex, Promise) {
   return knex.schema.dropTableIfExists('poncho')
-};
+}
